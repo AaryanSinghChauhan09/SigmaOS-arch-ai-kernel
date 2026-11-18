@@ -1,16 +1,16 @@
 [component]
 name = "SigmaOS-arch-ai-kernel"
 tier = 2
-stability = "scaffold"
+stability = "beta"
 language = "rust"
-description = "No GitHub description is set; component scope remains unclassified."
+description = "AI kernel with model management, inference scheduling, and neural network operations"
 upstream = []
 
 [contract]
-provides = ["component"]
+provides = ["ai-models", "inference", "neural-networks"]
 depends_on = []
 
 [maturity]
-status = "Scaffold"
-test_evidence = "Compiles and passes AAA unit tests"
-next_milestone = "Hardware and runtime integration"
+status = "Implemented"
+test_evidence = "cargo test --offline unit tests pass"
+next_milestone = "Actual ML framework integration and GPU acceleration"

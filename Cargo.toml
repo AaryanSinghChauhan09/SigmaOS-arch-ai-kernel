@@ -1,10 +1,13 @@
 [package]
-name = "arch-ai-kernel"
+name = "sigmaos-arch-ai-kernel"
 version = "0.1.0"
 edition = "2021"
-description = "SigmaOS SigmaOS-arch-ai-kernel component - Inspired by Arch Linux and Debian"
+description = "AI kernel for SigmaOS"
 license = "MIT"
 repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-arch-ai-kernel"
 
 [dependencies]
-thiserror = "2"
+
+[lib]
+name = "sigmaos_arch_ai_kernel"
+path = "src/lib.rs"
